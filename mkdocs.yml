@@ -1,27 +1,26 @@
 site_name: Cursos
 theme: flatly
-repo_url: 'https://github.com/GomezMunera/anderson'
-site_description: 'Página personal'
+repo_url: 'https://github.com/GomezMunera/cursos-ing'
+site_description: 'Cursos dictados en la facultad de ingeniería de la universidad de Antioquia'
 nav:
 - 'Inicio': 'index.md'
 - Materias:
-  - 'Dictadas':
-    - 'Cálculo Multivariable':
-    - 'Sistemas de Control Continuo':
-    - 'Álgebra Líneal':
+    - 'Dictadas':
+        - 'Cálculo Multivariable': 'materias/clase1.md'
+        - 'Sistemas de Control Continuo': 'materias/clase2.md'
+        - 'Álgebra Líneal': 'materias/clase2.md'
+        - 'Electrónica': 'materias/clase2.md'
 
-  - 'Recibidas':
-- Proyectos:
-    - 'Red Sentir':
-        - 'Clase 1': 'materias/clase1.md'
-
-    - 'Corporación Concejo de Marinilla':
+    - 'Recibidas':
         - 'Lab 1': 'proyectos/lab1.md'
+        - 'Lab 2': 'proyectos/lab2.md'
 
-- Recursos:
+- Presentaciones:
     - 'Escribiendo': 'guia/Escribiendo.md'
     - 'Estilo': 'guia/estilo.md'
-
+- Guías:
+    - 'Escribiendo': 'guia/Escribiendo.md'
+    - 'Estilo': 'guia/estilo.md'
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     #- https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
@@ -29,31 +28,7 @@ extra_javascript:
     #- 'javascripts/extra.js'
     #- 'javascripts/MathJax.js'
 
-# Extensions
-markdown_extensions:
-    - mdx_math
-    - admonition
-#    - codehilite:
-#        linenums: true
-    - footnotes
-    - toc:
-        permalink: true
-    - pymdownx.arithmatex
-    - pymdownx.betterem:
-        smart_enable: all
-    - pymdownx.caret
-    - pymdownx.critic
-    - pymdownx.details
-    - pymdownx.emoji:
-        emoji_generator: !!python/name:pymdownx.emoji.to_svg
-    - pymdownx.inlinehilite
-    - pymdownx.magiclink
-    - pymdownx.mark
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist:
-        custom_checkbox: true
-    - pymdownx.tilde
+
 
 extra:
   language: 'es'
